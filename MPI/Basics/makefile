@@ -3,6 +3,7 @@ CC_RUN=/sw/linux/mpi/gcc/openmpi/bin/mpirun
 target:
 	${CC} -O3 --fast-math first.cpp -o first.out
 	${CC} -O3 --fast-math vector_basic.cpp -o vector.out
+	${CC} -O3 --fast-math vector_sum.cpp -o vector.out
 run:
 	${CC_RUN} -np 8 ./vector.out
 first:
