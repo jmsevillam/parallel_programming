@@ -1,5 +1,5 @@
 CC=/sw/linux/mpi/gcc/openmpi/bin/mpic++
-CC_RUN=mpiexec -n 4 python
+CC_RUN=mpiexec -n 4 python3
 target:
 	echo 'make run'
 run:
